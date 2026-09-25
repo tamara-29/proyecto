@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+    
+<!-- TÍTULO -->
+<div class="titulo">
+    <h1> MexiAventura</h1>
+    <p>Viaja por la historia de México prehispánico y la Conquista</p>
+</div>
+
+
+<!-- MAPA -->
+<div class="mapa">
+
+    <!-- NUBES -->
+    <div class="nube" style="top: 8%; left: 8%;"></div>
+    <div class="nube" style="top: 18%; right: 10%;"></div>
+    <div class="nube" style="top: 55%; left: 45%;"></div>
+
+
+    <div class="mapa">
+
+    <!-- CAMINO -->
+    <svg class="camino" viewBox="0 0 1100 900" preserveAspectRatio="none">
+        <path
+            class="camino-tierra"
+            d="M 128 748
+               C 180 700, 220 650, 280 626
+               C 350 620, 410 670, 479 681
+               C 540 650, 580 570, 644 540
+               C 700 510, 780 470, 831 445
+               C 800 400, 700 370, 644 339
+               C 580 300, 520 270, 456 253
+               C 390 280, 320 320, 259 328
+               C 220 290, 200 220, 171 178
+               C 260 130, 400 100, 535 62"
+        />
+        
+        <path
+            class="camino-centro"
+            d="M 128 748
+               C 180 700, 220 650, 280 626
+               C 350 620, 410 670, 479 681
+               C 540 650, 580 570, 644 540
+               C 700 510, 780 470, 831 445
+               C 800 400, 700 370, 644 339
+               C 580 300, 520 270, 456 253
+               C 390 280, 320 320, 259 328
+               C 220 290, 200 220, 171 178
+               C 260 130, 400 100, 535 62"
+        />
+    </svg>
+
+
+
+    <!-- NIVEL 1 -->
+    <button class="nivel nivel1" onclick="abrirNivel(1)">
+        1
+        <span class="estrellas" style="color: #000000;">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 2 -->
+    <button class="nivel nivel2" onclick="abrirNivel(2)">
+        2
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 3 -->
+    <button class="nivel nivel3" onclick="abrirNivel(3)">
+        3
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 4 -->
+    <button class="nivel nivel4" onclick="abrirNivel(4)">
+        4
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 5 -->
+    <button class="nivel nivel5" onclick="abrirNivel(5)">
+        5
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 6 -->
+    <button class="nivel nivel6" onclick="abrirNivel(6)">
+        6
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 7 -->
+    <button class="nivel nivel7" onclick="abrirNivel(7)">
+        7
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 8 -->
+    <button class="nivel nivel8" onclick="abrirNivel(8)">
+        8
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 9 -->
+    <button class="nivel nivel9" onclick="abrirNivel(9)">
+        9
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+
+    <!-- NIVEL 10 -->
+    <button class="nivel nivel10" onclick="abrirNivel(10)">
+        10
+        <span class="estrellas">☆☆☆</span>
+    </button>
+
+</div>
+
+
+<!-- VENTANA DE INFORMACIÓN -->
+
+<div class="modal" id="modal">
+
+    <div class="contenido">
+
+        <h2 id="tituloNivel"></h2>
+
+        <p id="textoNivel"></p>
+
+        <button class="cerrar" onclick="cerrarNivel()">
+            Cerrar ✖
+        </button>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
